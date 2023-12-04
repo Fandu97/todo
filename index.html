@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!----------------Bootstrap CSS CDN---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css"/>
+    <!----------------Fontawesome CDN---------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+    <!----------------Custom CSS---------------->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Todo List</title>
+</head>
+<body>
+    
+
+    <!--Banner Section-->
+    <section class="banner position-relative">
+        <div class="container-fluid p-0">
+            <div class="row">
+                <div class="col-12">
+                    <img src="./assets/images/todo_banner.jpg" alt="banner Image" class="banImg img-fluid w-100">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Todo Form Section-->
+    <section class="TodoForm">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mx-auto">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <h1 class="TodoHeading flex-grow-1">TODO</h1>
+                        <button class="darkMode transparent-btn flex-shrink-0"><i class="fa-solid fa-moon"></i></button>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-between position-relative">
+                        <input type="text" name="createTask" id="createTask" class="site-input taskValue" placeholder="Create a new todo...">
+                        <button class="addTask transparent-btn"><i class="fa-solid fa-plus"></i></button>
+                    </div>
+                    <div class="TodoListing">
+                        <ul class="taskList">
+                        </ul>
+                        <div class="TodoListingOptions text-end border-top">
+                            <button class="deleteAll site-btn">Delete All</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!----------------Bootstrap JS CDN---------------->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.min.js"></script>
+    <!----------------Custom JS---------------->
+    <script src="./assets/js/custom.js"></script>
+</body>
+</html>
